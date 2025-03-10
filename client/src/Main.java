@@ -21,7 +21,14 @@ public class Main {
         out.println(a);
         out.println(b);
 
-        System.out.println(in.readLine());
+        String response;
+        while ((response = in.readLine()) != null) {
+            System.out.println(response);
+        }
 
+        socket.close();
+        scanner.close();
+        in.close();
+        out.close();
     }
 }

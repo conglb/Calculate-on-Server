@@ -37,7 +37,8 @@ public class Main {
 
             int b = Integer.parseInt(in.readLine());
 
-            out.println(lcm(a, b));
+            out.println(String.format("GCD(%d,%d) = %d", a, b, gcd(a, b)));
+            out.println(String.format("LCM(%d,%d) = %d", a, b, lcm(a, b)));
 
             socket.close();
         }
